@@ -1,5 +1,6 @@
-package com.goals.facultymanagementsystem.converter;
+package com.goals.facultymanagementsystem.converter.faculty;
 
+import com.goals.facultymanagementsystem.converter.qualification.QualificationDetailsToQualificationConverter;
 import com.goals.facultymanagementsystem.dto.FacultyDetails;
 import com.goals.facultymanagementsystem.entity.Faculty;
 import com.goals.facultymanagementsystem.repository.FacultyRepository;

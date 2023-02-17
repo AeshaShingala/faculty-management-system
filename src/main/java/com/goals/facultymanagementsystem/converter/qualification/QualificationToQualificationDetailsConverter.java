@@ -1,4 +1,4 @@
-package com.goals.facultymanagementsystem.converter;
+package com.goals.facultymanagementsystem.converter.qualification;
 
 import com.goals.facultymanagementsystem.dto.QualificationDetails;
 import com.goals.facultymanagementsystem.entity.Qualification;

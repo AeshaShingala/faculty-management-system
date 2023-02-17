@@ -1,9 +1,9 @@
 package com.goals.facultymanagementsystem.service;
 
-import com.goals.facultymanagementsystem.converter.FacultyDetailsToFacultyConverter;
-import com.goals.facultymanagementsystem.converter.FacultyToFacultyDetailsConverter;
-import com.goals.facultymanagementsystem.converter.LeaveDetailsToLeaveConverter;
-import com.goals.facultymanagementsystem.converter.LeaveToLeaveDetailsConverter;
+import com.goals.facultymanagementsystem.converter.faculty.FacultyDetailsToFacultyConverter;
+import com.goals.facultymanagementsystem.converter.faculty.FacultyToFacultyDetailsConverter;
+import com.goals.facultymanagementsystem.converter.leave.LeaveDetailsToLeaveConverter;
+import com.goals.facultymanagementsystem.converter.leave.LeaveToLeaveDetailsConverter;
 import com.goals.facultymanagementsystem.dto.ApplyLeaveDetails;
 import com.goals.facultymanagementsystem.dto.FacultyDetails;
 import com.goals.facultymanagementsystem.dto.LeaveDetails;

@@ -1,4 +1,4 @@
-package com.goals.facultymanagementsystem.converter;
+package com.goals.facultymanagementsystem.converter.leave;
 
 import lombok.NonNull;
 import org.springframework.core.convert.converter.Converter;

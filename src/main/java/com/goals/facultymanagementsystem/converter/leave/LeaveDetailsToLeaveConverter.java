@@ -1,4 +1,4 @@
-package com.goals.facultymanagementsystem.converter;
+package com.goals.facultymanagementsystem.converter.leave;
 
 import com.goals.facultymanagementsystem.dto.LeaveDetails;
 import com.goals.facultymanagementsystem.entity.Leave;

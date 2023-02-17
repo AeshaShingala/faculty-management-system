@@ -20,7 +20,7 @@ public class FacultyController {
         this.facultyService = facultyService;
     }
 
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<GenericResponse> getAllFaculties(@RequestParam(defaultValue = "1") int pageNo, @RequestParam(defaultValue = "4") int pageSize) {
         return new ResponseEntity<>(new GenericResponse(true, "Faculties found successfully", facultyService.findAllFaculties(pageNo, pageSize), HttpStatus.OK.value(), LocalDateTime.now()), HttpStatus.OK);
     }
@@ -40,7 +40,7 @@ public class FacultyController {
         return new ResponseEntity<>(new GenericResponse(true, "Leaves found successfully", facultyService.findAllLeaves(facultyId), HttpStatus.OK.value(), LocalDateTime.now()), HttpStatus.OK);
     }
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<GenericResponse> addFaculty(@RequestBody FacultyDetails facultyDetails) {
         return new ResponseEntity<>(new GenericResponse(true, "Faculty added successfully", facultyService.addFaculty(facultyDetails), HttpStatus.CREATED.value(), LocalDateTime.now()), HttpStatus.CREATED);
     }
@@ -50,7 +50,7 @@ public class FacultyController {
         return new ResponseEntity<>(new GenericResponse(true, "Leave added successfully", facultyService.addLeave(facultyId, leaveDetails), HttpStatus.CREATED.value(), LocalDateTime.now()), HttpStatus.CREATED);
     }
 
-    @PutMapping("/")
+    @PutMapping
     public ResponseEntity<GenericResponse> updateFaculty(@RequestBody FacultyDetails facultyDetails) {
         return new ResponseEntity<>(new GenericResponse(true, "Faculty updated successfully", facultyService.updateFacultyById(facultyDetails), HttpStatus.OK.value(), LocalDateTime.now()), HttpStatus.OK);
     }
